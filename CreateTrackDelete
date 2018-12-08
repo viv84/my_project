@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# create local
+git branch foo 
+
+# create remote
+git push origin foo 
+
+# track remote local
+git branch --set-upstream-to origin/foo foo
+
+# show what's tracking
+git remote show origin
+
+# show whats tracking
+git branch -vv
+
+# delete local
+git branch -d foo 
+
+# delete remote
+git push --delete origin foo 
+
+
+
+
